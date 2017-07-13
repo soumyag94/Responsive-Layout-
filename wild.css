@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family:'Raleway', sans-serif;
   margin: 0;
 }
 
@@ -42,7 +42,7 @@ h2 {
   font-size:1.5em;
   padding: 10px 5px;
 }
-/******************* HEADER ************************/
+/*******************NAVIGATION************************/
 nav {
   background: #fafafa;
   height:100%;
@@ -74,3 +74,5 @@ img.displayed {
   margin: 0 auto;
 
 }
+
+/*******************CAPTIONS ************************/
