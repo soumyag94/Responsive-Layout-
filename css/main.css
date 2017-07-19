@@ -102,6 +102,9 @@ nav a:hover {
 .profile-section p {
   margin: 0 auto;
 }
+.portfolio ul {
+  padding: 0;
+}
 
 /*******************CAPTIONS ************************/
 figcaption p, .contacts p {
