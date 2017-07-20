@@ -1,5 +1,8 @@
 /******************* Layout-wide************************/
-
+.clearfix {
+		content: " ";
+		display: table;
+		clear: both;}
 
 h1 {
   font-weight: bolder;
@@ -171,22 +174,53 @@ figcaption p, .contacts p {
 .bottom-name {
   float: left;
 }
-
+.sec-nav {
+  visibility: hidden;
+}
 
 
 /***********************MEDIA QUERIES****************************/
 
 @media (min-width: 769px) {
 
-.portfolio {
-  margin: 0;
-  padding: 0;
-}
-.gallery {
-  display: inline;
-  max-width: 40%;
+
+/*IMAGES */
+.portfolio ul {
+  display: inline-block;
+  padding: 0 10px;
 }
 
+.gallery {
+  max-width: 50%;
+  float: left;
+}
+
+.gallery img {
+  max-width: 98%;
+}
+
+figcaption {
+  margin: 0 30px;
+}
+
+/*CONTACTS*/
+.contacts {
+  min-width: 100%;
+}
+.contacts p {
+  margin:0 12% 10px;
+}
+.contacts li {
+  line-height: 2.5em;
+}
+
+.back-to-top {
+  visibility: hidden;
+}
+
+.sec-nav {
+  visibility: visible;
+}
 
 
 
