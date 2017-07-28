@@ -37,7 +37,7 @@ p {
   font-size: 1.2em;
   color: #8e8e8e;
   line-height: 1.5em;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 h1 {
@@ -174,10 +174,6 @@ figcaption p, .contacts p {
 .bottom-name {
   float: left;
 }
-.sec-nav {
-  visibility: hidden;
-}
-
 
 /***********************MEDIA QUERIES****************************/
 
@@ -214,16 +210,14 @@ figcaption {
   line-height: 2.5em;
 }
 
-.back-to-top {
+
+.footer-small {
   visibility: hidden;
 }
 
 .sec-nav {
-  visibility: visible;
+  float: right;
 }
-
-
-
 
 
 }
