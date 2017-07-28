@@ -96,8 +96,7 @@ nav a:hover {
 
 .displayed {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 30px 5px 20px;
   max-width: 70%;
 }
@@ -110,7 +109,7 @@ nav a:hover {
 }
 
 /*******************CAPTIONS ************************/
-figcaption p, .contacts p {
+.profile-caption, figcaption p, .contacts p {
   padding: 1em;
   padding-top: .2em;
 }
@@ -181,12 +180,44 @@ figcaption p, .contacts p {
 /***********************MEDIA QUERIES****************************/
 
 @media (min-width: 769px) {
-
+/***** General *******/
 p {
 	font-size: 1.1em;
 }
+.clearfix-tablet {
+	overflow: auto;
+}
+/**********MAIN NAV***********************/
 
-/*IMAGES */
+.main-nav li {
+	display: inline;
+	background: none;
+}
+
+
+
+/*********PROFILE SECTION********************/
+
+.profile-section img {
+	float: right;
+}
+.profile-section {
+	float: left;
+	padding: 30px 10px ;
+}
+.profile-section p {
+	text-align: left;
+	margin: auto;
+	font-size: 1.17em;
+	padding-right: 20px;
+	line-height: 1.5;
+}
+.displayed {
+	padding: 0;
+	max-width: 40%;
+}
+
+/***************IMAGES *********************/
 .portfolio ul {
   display: inline-block;
   padding: 0 10px;
@@ -201,11 +232,11 @@ p {
   max-width: 98%;
 }
 
-figcaption {
+figcaption, .profile-caption{
   margin: 0 30px;
 }
 
-/*CONTACTS*/
+/************** WIDE CONTACTS*************/
 .contacts {
   min-width: 100%;
 }
@@ -216,12 +247,13 @@ figcaption {
   line-height: 2.5em;
 }
 
+/************** WIDE FOOTER*************/
 .footer-mobile {
 	display: none;
 }
 
 .footer-tablet li {
-	font-size:1em;
+	font-size:0.95em;
 	font-weight: bolder;
 }
 .footer-tablet {
