@@ -141,7 +141,7 @@ figcaption p, .contacts p {
 
 
 /*********************Footer *******************/
-.footer ul {
+.footer-mobile, .footer-tablet {
   list-style-type: none;
   padding: 0;
   margin:0;
@@ -175,10 +175,16 @@ figcaption p, .contacts p {
   float: left;
 }
 
+.footer-tablet {
+	display: none;
+}
 /***********************MEDIA QUERIES****************************/
 
 @media (min-width: 769px) {
 
+p {
+	font-size: 1.1em;
+}
 
 /*IMAGES */
 .portfolio ul {
@@ -210,14 +216,30 @@ figcaption {
   line-height: 2.5em;
 }
 
-
-.footer-small {
-  visibility: hidden;
+.footer-mobile {
+	display: none;
 }
 
-.sec-nav {
-  float: right;
+.footer-tablet li {
+	font-size:1em;
+	font-weight: bolder;
+}
+.footer-tablet {
+	display: block;
+	float: right;
+	min-width: 100%;
+}
+.bottom-name {
+  float: left;
 }
 
+.footer-tablet .nav-left {
+	float: right;
+}
+.footer-tablet a{
+	float: left;
+	display: block;
+	padding: 0 10px;
+}
 
 }
