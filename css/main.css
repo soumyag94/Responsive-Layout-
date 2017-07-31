@@ -11,7 +11,6 @@ h1 {
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
-
 }
 a {
   text-decoration: none;
@@ -109,7 +108,7 @@ nav a:hover {
 }
 
 /*******************CAPTIONS ************************/
-.profile-caption, figcaption p, .contacts p {
+.profile-caption, .gallery p, .contacts p {
   padding: 1em;
   padding-top: .2em;
 }
@@ -179,11 +178,12 @@ nav a:hover {
 }
 /***********************MEDIA QUERIES****************************/
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 /***** General *******/
 p {
 	font-size: 1.1em;
 }
+
 .clearfix-tablet {
 	overflow: auto;
 }
@@ -193,8 +193,6 @@ p {
 	display: inline;
 	background: none;
 }
-
-
 
 /*********PROFILE SECTION********************/
 
@@ -215,6 +213,7 @@ p {
 .displayed {
 	padding: 0;
 	max-width: 40%;
+	padding-right: 10px
 }
 
 /***************IMAGES *********************/
@@ -232,8 +231,12 @@ p {
   max-width: 98%;
 }
 
-figcaption, .profile-caption{
+.gallery p, .profile-caption{
   margin: 0 30px;
+}
+.list li:nth-child(odd)
+{
+	clear: left;
 }
 
 /************** WIDE CONTACTS*************/
@@ -274,4 +277,63 @@ figcaption, .profile-caption{
 	padding: 0 10px;
 }
 
+}
+
+@media (min-width: 1024px){
+
+
+	.clearfix-desktop {
+			content: " ";
+			display: table;
+			clear: both;}
+.gallery {
+	max-width: 33.33%;
+}
+.contacts p {
+	font-size: 1.2em;
+	margin: 0 auto;
+	margin: 0 20%;
+	line-height: 1.4em;
+}
+
+nav {
+	min-width: 100%;
+	padding-top: 20px;
+	padding-left: 30px;
+}
+.main-nav, .student-name {
+display: inline-block;
+}
+.main-nav{
+	float: right;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.profile-section p{
+	font-size: 1.3em;
+}
+#top {
+	float: left;
+	padding-left: 20px;
+	margin: 0 auto;
+	padding: 0;
+}
+.portfolio {
+	max-width: 100%;
+	border-right: 40px solid #fafafa;
+	border-left: 40px solid #fafafa;
+	margin: 0 auto;
+}
+
+ul.main-nav, .displayed {
+	padding-right: 40px;
+}
+.list li:nth-child(3n)
+{
+	clear: right;
+}
+.list li:nth-child(5n){
+	clear: right;
+}
 }
